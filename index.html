@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devansh's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Xnip2024-11-28_23-49-20-removebg-preview.png" class="logo" alt="Portfolio Logo">
+                <ul>
+                    <li><a href="#header" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Devansh</span><br>Jain From Canada 👋</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_5710.png" alt="Devansh's Portrait">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I’m Devansh, an undergraduate student at Carleton University, pursuing a degree in Computer Science. 
+                        I’m passionate about leveraging technology to solve real-world problems and aspire to make a meaningful impact in society through the software and programs I create. 
+                        I’m open to working with companies and collaborating on innovative projects. 
+                        Let’s talk tech! Feel free to connect with me through my socials to discuss exciting opportunities, projects, or the latest trends in technology. 
+                        Welcome to my portfolio!.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python Programming</span><br>Backend Development</li>
+                            <li><span>UI/UX Design</span><br>Web Development</li>
+                            <li><span>App Development</span><br>Xcode & SwiftUI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - 2029</span><br>Carleton University</li>
+                            <li><span>2020 - 2024</span><br>Chinguacousy Secondary School - Scitech Program</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="To Do List App">
+                    <div class="layer">
+                        <h3>To Do List App</h3>
+                        <p>Listify is the ultimate to-do list app to help you stay organized and focused, 
+                            making it easy to prioritize and track progress</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="Weather App">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Get real-time weather updates with the weather app, built using Python and a weather API, all in a sleek, user-friendly interface.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="Stock Tracker App">
+                    <div class="layer">
+                        <h3>Stock Tracker App</h3>
+                        <p>Coming SOON...</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> devanshj228@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 647-410-3659</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/devanshj22?igsh=em82NTRsYmsxdW0%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Devanshj22"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/devansh-jain-78bbb1316/?originalSubdomain=ca"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Good Resume_Devansh.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Devansh. Made with <i class="fa-solid fa-heart"></i> by Devansh. </p>
+        </div>
+        <div class="endingstatement">
+            <p></p>
+        </div>
+    </section>
+
+
+    <!-- JavaScript -->
+    <script>
+        const tablinks = document.querySelectorAll(".tab-links");
+        const tabcontents = document.querySelectorAll(".tab-contents");
+
+        function opentab(tabname) {
+            tablinks.forEach(link => link.classList.remove("active-link"));
+            tabcontents.forEach(content => content.classList.remove("active-tab"));
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzCcLiBzbaU468qFmCeRZ-aiTsi928HUfmVcqFXm5CrigZaCg5gjtBAUmWraJ2BbjyQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
